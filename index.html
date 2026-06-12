@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora | The Debating Society of ABESEC</title>
+    <meta name="description" content="Agora is the debating society of ABESEC. Explore the public square of argument, events, recruitment, resources, and society culture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a class="brand" href="index.html" aria-label="Agora home">
+                <span class="brand-mark">Agora</span>
+                <span class="brand-sub">The Debating Society of ABESEC</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+                <span aria-hidden="true"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav aria-label="Primary">
+                <ul class="nav-menu" id="siteNav">
+                    <li><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+                    <li><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+                    <li><a class="nav-link" data-nav="events" href="events.html">Events</a></li>
+                    <li><a class="nav-link" data-nav="join" href="join.html">Join</a></li>
+                    <li><a class="nav-link" data-nav="resources" href="resources.html">Resources</a></li>
+                    <li><a class="nav-link" data-nav="team" href="team.html">Team</a></li>
+                    <li><a class="nav-link" data-nav="archive" href="archive.html">Archive</a></li>
+                    <li><a class="nav-cta" data-nav="contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container hero-layout">
+                <article class="hero-copy reveal">
+                    <span class="eyebrow">The Public Square of ABESEC</span>
+                    <h1>Agora is where argument learns to stand up in public.</h1>
+                    <p class="lead">
+                        We are the intellectual forge of ABESEC. Agora is not merely a club; it is a visible 
+                        institution where the chaos of opinion is refined into the clarity of argument.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill">Dialectic Rigor</span>
+                        <span class="pill">Oratorical Excellence</span>
+                        <span class="pill">The Living Archive</span>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="join.html">Enter the Square</a>
+                        <a class="btn btn-secondary" href="events.html">The Term Rhythm</a>
+                    </div>
+                    <div class="stats-grid" id="homeStats"></div>
+                </article>
+
+                <aside class="poster-card reveal">
+                    <span class="eyebrow">The Mandate</span>
+                    <h2 class="poster-heading">Reason is the only Sovereign.</h2>
+                    <p class="poster-sub">
+                        In an age of noise, Agora remains a sanctuary for the signal. Our visual and intellectual 
+                        identity is built on the ceremonial logic of the classical forum—where clarity is the 
+                        highest virtue.
+                    </p>
+                    <div class="poster-steps">
+                        <div class="poster-step">
+                            <strong>Thesis</strong>
+                            <span>Claim with clarity</span>
+                        </div>
+                        <div class="poster-step">
+                            <strong>Antithesis</strong>
+                            <span>Challenge with courage</span>
+                        </div>
+                        <div class="poster-step">
+                            <strong>Synthesis</strong>
+                            <span>Lead with wisdom</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The Mandate</span>
+                    <h2>Eloquence is the tool of the wise.</h2>
+                    <p class="section-copy">
+                        "The orator is a good man skilled in speaking." We believe that to speak well is to think well. 
+                        Agora is where we master the tools of the citizen-leader: logic, empathy, and courage.
+                    </p>
+                </div>
+                <div class="asset-grid">
+                    <article class="asset-card asset-card--crest reveal">
+                        <span class="eyebrow">The Crest</span>
+                        <h3>Legacy through Discourse.</h3>
+                        <p>Our work is founded on the belief that a well-framed motion is the start of a better world.</p>
+                    </article>
+                    <article class="asset-card asset-card--warrior reveal">
+                        <span class="eyebrow">The Clash</span>
+                        <h3>Precision in Rebuttal.</h3>
+                        <p>We do not attack people; we dismantle ideas until only the strongest survive the round.</p>
+                    </article>
+                    <article class="asset-card asset-card--paper reveal">
+                        <span class="eyebrow">The Record</span>
+                        <h3>Monuments of Speech.</h3>
+                        <p>Every word spoken in the square is etched into our institutional memory for those who come next.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The Philosophy</span>
+                    <h2>A society built on the friction of ideas.</h2>
+                    <p class="section-copy">
+                        Agora is not just about talking; it's about the relentless pursuit of truth through dialectic. 
+                        We believe that iron sharpens iron, and argument sharpens the mind.
+                    </p>
+                </div>
+                <div class="grid-4" id="homeHighlights"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The Term Rhythm</span>
+                    <h2>The Staging of Intellectual Contest.</h2>
+                    <p class="section-copy">
+                        Our society breathes through a recurring rhythm of workshops, internal rounds, and 
+                        flagship symposiums. Each event is a new threshold for the developing orator.
+                    </p>
+                </div>
+                <div class="grid-3" id="eventsPreview"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split-layout">
+                <article class="pull-quote reveal">
+                    <span class="eyebrow">The Agora Oath</span>
+                    <p>
+                        "Not just a place to speak, but a place where thought is made visible, questioned, and remembered."
+                    </p>
+                </article>
+                <article class="sidebar-card reveal">
+                    <span class="eyebrow">The Standard</span>
+                    <h3>The Architecture of Persuasion.</h3>
+                    <p class="muted">
+                        For Agora, excellence means clarity, continuity, and a strong public identity. We build 
+                        a site that reflects a society that is active, rigorous, and profoundly human.
+                    </p>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="about.html">Our Manifesto</a>
+                        <a class="btn btn-secondary" href="archive.html">The Record of Wins</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The Member Voice</span>
+                    <h2>The Humanity of Discourse.</h2>
+                    <p class="section-copy">
+                        Behind every case and every motion is a member who found their voice in this room. 
+                        We are a community of scholars, rivals, and ultimately, friends.
+                    </p>
+                </div>
+                <div class="grid-3" id="homeVoices"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <article class="cta-band card-dark reveal">
+                    <span class="eyebrow">The Final Threshold</span>
+                    <h2>The Room is Waiting for Your Voice.</h2>
+                    <p class="section-copy">
+                        The transformation from a student to an orator begins with a single step into the square. 
+                        Do not wait for permission to be heard. Claim your place in the legacy of Agora.
+                    </p>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="join.html">Begin Onboarding</a>
+                        <a class="btn btn-secondary" href="contact.html">Connect with the House</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div>
+                <p class="brand-mark" style="font-size: 1.6rem;">Agora</p>
+                <p class="footer-note">The debating society of ABESEC. Built to hold events, motions, committees, and the culture around them.</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="archive.html">Archive</a>
+                <a href="https://www.instagram.com/abes__agora/" target="_blank" rel="noreferrer">Instagram</a>
+                <span class="footer-note">© <span id="currentYear"></span> Agora</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

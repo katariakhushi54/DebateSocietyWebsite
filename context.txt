@@ -1,0 +1,171 @@
+Project: Agora website for the debate society of ABESEC
+Date context: work completed on 2026-03-30 and 2026-03-31 IST
+
+High-level goal
+- Convert the old dBETA event-platform project into a world-class website for the debate society "Agora".
+- The website should feel like an institution, not a generic event app.
+- Core positioning: Agora is a public square for thought, speech, argument, rhetoric, training, competition, and community.
+
+Key design direction agreed with user
+- Tone: premium editorial
+- Visual meaning: should reflect the meaning of "Agora" and feel aligned with the Instagram page @abes__agora
+- Instagram references supplied by user showed:
+  - black / dark framing
+  - cream / parchment poster surfaces
+  - bronze / gold accents
+  - oxblood / deep red accents
+  - classical motifs, insignia, ceremonial poster language
+  - phrases like "Recruitment is live", "The house has decided", "Warriors", "Symposium. Debate. Workshops. Quiz."
+- Important constraint: motion and color should be rich but restrained. Do not turn it into a neon startup landing page or college fest page.
+
+What the site currently is
+- Static multi-page website built with plain HTML, CSS, and vanilla JS only.
+- No React, no Next.js, no Vue, no Tailwind, no package.json/build system.
+- Only external dependency is Google Fonts loaded via link tags.
+
+Current file structure
+- index.html: homepage
+- about.html: positioning / identity
+- events.html: event rhythm and term-card style structure
+- join.html: recruitment and onboarding
+- resources.html: formats and beginner materials
+- team.html: committee visibility
+- archive.html: poster wall / motions / result-board memory
+- contact.html: contact pathways
+- dBETA.html: redirect to index.html
+- assets/css/site.css: shared design system and all visual styling
+- assets/js/site.js: shared content data, nav behavior, reveal logic
+- README.md: short project overview
+
+Important implementation decisions made
+- Rebuilt the project from a single long HTML file into a multi-page static site.
+- Centralized the visual system in assets/css/site.css.
+- Centralized shared content and interaction patterns in assets/js/site.js.
+- Added responsive navigation with active-page highlighting.
+- Added reduced-motion support.
+- Added scroll reveal animations.
+- Added ambient animated background and richer asset-style visual zones.
+- Added dedicated colorful/decorative asset sections in index.html and archive.html.
+
+Design system summary
+- Base colors:
+  - very dark near-black background
+  - parchment / cream surfaces
+  - bronze / gold accents
+  - oxblood / deep red accents
+  - olive / muted green secondary accents
+- Typography:
+  - Cinzel for ceremonial/insignia display moments
+  - Cormorant Garamond for editorial headings
+  - Manrope for body text
+- Mood:
+  - ceremonial
+  - editorial
+  - institutional
+  - poster-led
+  - debate-society serious, not tech-product generic
+
+Motion / animation layer added
+- Ambient animated site background in CSS
+- Floating light / glow fields
+- Decorative hero sigil / halo motion
+- Stronger hover lift for cards and buttons
+- Poster-card motion polish
+- Archive-tile shimmer / richer hover effect
+- These should remain subtle and controlled
+
+Major content strategy decisions
+- Agora should not be framed as "discover and host events" anymore.
+- It should be framed as the debating society of ABESEC.
+- Site should communicate:
+  - identity
+  - credibility
+  - event rhythm
+  - onboarding
+  - formats/resources
+  - leadership visibility
+  - archive and institutional memory
+- "World-class" for Agora means coherence, seriousness, continuity, clarity, and current information, not necessarily a huge technical stack.
+
+Research conclusions from today
+- Strong debate-society websites differ from weak ones mainly by institutional depth:
+  - real information architecture
+  - onboarding clarity
+  - archives
+  - leadership visibility
+  - credibility signals
+  - regularly updated event structures
+- Conclusion reached: for the current Agora site, a framework upgrade is only worthwhile if it serves a real need.
+- Best likely future stack upgrade if needed: Astro
+- Reason: Agora is a content-heavy public-facing website, not yet a complex app
+- React/Next.js was judged as heavier than necessary right now unless the project later grows into a member/admin platform
+
+Known placeholders still needing real content
+- Exact event dates, venues, motions, registration links
+- Current committee names and portraits
+- Official society email/contact details
+- Faculty coordinator details if appropriate
+- Real motion archive entries
+- Real winners / result-board data
+- Real posters and event photography
+- Real testimonials/member quotes
+
+Important pages and what they are for
+- Home:
+  - institutional positioning
+  - visual identity
+  - event preview
+  - member voice
+- About:
+  - explain meaning of Agora
+  - explain why the site is society-first, not event-app-first
+- Events:
+  - structure for live term rhythm
+  - should become real term card later
+- Join:
+  - clearer recruitment path and onboarding
+- Resources:
+  - beginner guides, formats, rebuttal/POI/motion-analysis material
+- Team:
+  - committee and role visibility
+- Archive:
+  - poster wall, motions, result boards, memory
+- Contact:
+  - durable contact pathways beyond Instagram posts
+
+What the user specifically asked for during the session
+- Wanted suggestions for making dBETA more world-class
+- Then clarified the real destination is a website for their debsoc at ABESEC called Agora
+- Approved all recommended core sections and all optional sections
+- Preferred tone: premium editorial
+- Wanted the site to symbolize the meaning of Agora and align with @abes__agora Instagram theme
+- Later asked to make the site world-class and "do what it takes"
+- Asked whether more advanced stacks/frameworks would be an upgrade
+- Then asked for animated background and colorful assets, approved all 4 proposed upgrade layers:
+  1. subtle animated background
+  2. decorative classical/paper/poster assets
+  3. hover/entry motion upgrades
+  4. stronger gallery/archive visuals
+
+Current strongest next steps
+- Replace all placeholder content with real Agora information
+- Add real event photos/posters instead of only CSS-generated visual surfaces
+- Add actual archive entries from Instagram/result posts
+- Add current committee member names and portraits
+- Add official email/contact and recruitment form
+- If the site needs long-term maintainability and content workflows, consider migrating to Astro
+
+If continuing next session, sensible first actions
+1. Ask whether to do a real-content pass using actual Agora data
+2. If yes, replace placeholders across events/team/contact/archive
+3. Add real image assets from posters / event coverage
+4. Optionally discuss Astro migration only after the real-content pass
+
+Verification performed today
+- Internal link check across all HTML files passed
+- Shared CSS brace-balance check passed
+- Verified new animation/asset hooks were present in the shared stylesheet
+
+Final note for next session
+- The site is no longer a one-page mockup. It is now a coherent static multi-page Agora website concept with a strong visual system.
+- The most important remaining work is content truth, not more stylistic experimentation.
